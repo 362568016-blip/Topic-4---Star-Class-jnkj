@@ -93,22 +93,24 @@ namespace Topic_4___Star_Class
                     star.X = window.Width;
             }
 
-            if (keyboardState.IsKeyDown(Keys.W))
-            {
-                shipSpeed.Y -= shipState;
-            }
-            if (keyboardState.IsKeyDown(Keys.S))
-            {
-                shipSpeed.Y += shipState;
-            }
-            if (keyboardState.IsKeyDown(Keys.A))
-            {
-                shipSpeed.X -= shipState;
-            }
-            if (keyboardState.IsKeyDown(Keys.D))
-            {
-                shipSpeed.X += shipState;
-            }
+                if (keyboardState.IsKeyDown(Keys.W))
+                {
+                    shipSpeed.Y -= shipState;
+                }
+                if (keyboardState.IsKeyDown(Keys.S))
+                {
+                    shipSpeed.Y += shipState;
+                }
+                if (keyboardState.IsKeyDown(Keys.A))
+                {
+                    shipSpeed.X -= shipState;
+                }
+                if (keyboardState.IsKeyDown(Keys.D))
+                {
+                    shipSpeed.X += shipState;
+                }
+
+            shipRect.Offset(shipSpeed);
 
 
 
